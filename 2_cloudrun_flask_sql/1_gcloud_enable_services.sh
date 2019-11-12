@@ -2,7 +2,9 @@
 
 #gcloud services list --available | grep cloudbuild
 
-SERVICE1=cloudbuild.googleapis.com
-SERVICE2=run.googleapis.com
-gcloud services enable $SERVICE1
-gcloud services enable $SERVICE2
+for service in cloudbuild.googleapis.com \
+    run.googleapis.com \
+    sqladmin.googleapis.com
+do
+    gcloud services enable $service
+done

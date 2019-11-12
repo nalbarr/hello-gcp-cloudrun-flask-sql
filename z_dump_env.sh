@@ -16,6 +16,8 @@ echo "SQL_PASSWORD: " $SQL_PASSWORD
 echo ""
 echo "DATABASE_NAME: " $DATABASE_NAME
 echo ""
+echo "SERVICE_ACCOUNT: " $SERVICE_ACCOUNT
+echo ""
 
 # cloud run
 echo "HOSTNAME: " $HOSTNAME

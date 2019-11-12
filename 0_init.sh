@@ -11,6 +11,7 @@ export INSTANCE_CONNECTION_NAME=$PROJECT:$REGION:$INSTANCE_NAME
 export SQL_USER=postres
 export SQL_PASSWORD=postgres
 export DATABASE_NAME=mydb
+export SERVICE_ACCOUNT=$PROJECT@hello-gcp-cloudrun-flask-sql.iam.gserviceaccount.com
 
 # cloud run
 export HOSTNAME=gcr.io

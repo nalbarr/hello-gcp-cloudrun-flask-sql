@@ -22,10 +22,16 @@ import sqlalchemy
 
 # Remember - storing secrets in plaintext is potentially unsafe. Consider using
 # something like https://cloud.google.com/kms/ to help keep secrets secret.
-db_user = os.environ.get("DB_USER")
-db_pass = os.environ.get("DB_PASS")
-db_name = os.environ.get("DB_NAME")
-cloud_sql_connection_name = os.environ.get("CLOUD_SQL_CONNECTION_NAME")
+# db_user = os.environ.get("DB_USER")
+# db_pass = os.environ.get("DB_PASS")
+# db_name = os.environ.get("DB_NAME")
+# cloud_sql_connection_name = os.environ.get("CLOUD_SQL_CONNECTION_NAME")
+
+# NAA. Re-use outer env vars
+db_user = os.environ.get("SQL_USER")
+db_pass = os.environ.get("SQL_PASSWORD")
+db_name = os.environ.get("DATABASE_NAME")
+cloud_sql_connection_name = os.environ.get("INSTANCE_CONNECTION_NAME")
 
 app = Flask(__name__)
 
