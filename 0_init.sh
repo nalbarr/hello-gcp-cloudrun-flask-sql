@@ -13,6 +13,7 @@ export SQL_PASSWORD=postgres
 export DATABASE_NAME=mydb
 export SERVICE_ACCOUNT=$PROJECT@hello-gcp-cloudrun-flask-sql.iam.gserviceaccount.com
 export SQLALCHEMY_DATABASE_URI=postgresql+psycopg2://$SQL_USER:$SQL_PASSWORD@127.0.0.1:5432/$DATABASE_NAME
+export CREDENTIALS_FILE=hello-gcp-cloudrun-flask-sql-40b9eab89bfe.json
 
 # cloud run
 export HOSTNAME=gcr.io

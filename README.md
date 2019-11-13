@@ -52,6 +52,8 @@ hello-gcp-cloudrun-flask-sql
   - 7_cleanup.sh
 
 ### References
+- https://cloud.google.com/python/getting-started/using-cloud-sql
+- https://cloud.google.com/sql/docs/postgres/sql-proxy
 - https://github.com/GoogleCloudPlatform/python-docs-samples/tree/master/cloud-sql/postgres/sqlalchemy
 - https://cloud.google.com/sql/docs/postgres/create-manage-databases
 - https://cloud.google.com/sql/docs/postgres/connect-app-engine
@@ -60,3 +62,10 @@ hello-gcp-cloudrun-flask-sql
 - https://codelabs.developers.google.com/codelabs/connecting-to-cloud-sql/
 - NOTE: NAA.  Below has more current libraries in requirements.txt?  Just port from GAE to Cloud run.
 - https://cloud.google.com/appengine/docs/flexible/python/using-cloud-sql-postgres
+- NOTE: NAA. psycopg issues here during container build.
+- https://cloud.google.com/sql/docs/postgres/connect-docker
+- https://stackoverflow.com/questions/51061722/using-psycopg2-directly-on-google-appengine
+- NOTE: NAA. GAE and Cloud Run approach env vars differently.  app.yaml only needed for GAE.
+- https://cloud.google.com/run/docs/configuring/environment-variables
+- NOTE: NAA. Need Unix specific sockets.
+- https://stackoverflow.com/questions/53773578/flask-sqlalchemy-cant-connect-to-google-cloud-postgresql-database-with-unix-soc

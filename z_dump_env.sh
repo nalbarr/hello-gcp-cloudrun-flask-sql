@@ -18,6 +18,8 @@ echo "DATABASE_NAME: " $DATABASE_NAME
 echo ""
 echo "SERVICE_ACCOUNT: " $SERVICE_ACCOUNT
 echo ""
+echo "CREDENTIALS_FILE: " $CREDENTIALS_FILE
+echo ""
 
 # cloud run
 echo "HOSTNAME: " $HOSTNAME

@@ -1,7 +1,16 @@
+# NAA. Lift and move from more current GCP GAE docs.
 #Flask==1.1.1
-#SQLAlchemy==1.3.8
-#pg8000==1.13.2
+#Flask-SQLAlchemy==2.4.1
+#gunicorn==19.9.0
+# NAA. NOTE: including psycopg2 without binary will attempt to force source compile? May need other apt-get?
+#psycopg2==2.8.3
+#psycopg2-binary
+#pylint
+#pytest
+
+# NAA. Previous attempt using older GCP Cloud Run with Postgres docs.
 Flask==1.1.1
-Flask-SQLAlchemy==2.4.1
-gunicorn==19.9.0
-psycopg2==2.8.3
+SQLAlchemy==1.3.8
+pg8000==1.13.2
+pylint
+pytest
